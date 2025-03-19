@@ -1,6 +1,6 @@
 <div align = "center">
-<h1> Biểu đồ use case </h1>
-<h1> ==================== </h1>
+<h1> Biểu đồ use case <br>
+ ==================== </h1>
 </div>
 
 ## 1. Biểu đồ use case tổng quan
