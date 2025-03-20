@@ -16,3 +16,15 @@ Tệp này cung cấp tổng quan về sơ đồ lớp và mục đích của n�
 
 - Thêm hình ảnh hoặc mô tả sơ đồ lớp.
 - Tài liệu hóa các lớp chính và vai trò của chúng trong hệ thống.
+
+## Sơ đồ phân rã mức 2
+
+---
+
+### Quàn lý dân cư
+![Sơ đồ quản lý dân cư](quanlidancu.png)
+
+---
+
+### Quàn lý căn hộ
+![Sơ đồ quản lý căn hộ](quanlycanho.png)
