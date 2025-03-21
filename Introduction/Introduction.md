@@ -1,10 +1,10 @@
-# TÀI LIỆU THIẾT KẾ HỆ THỐNG PHẦN MỀM QUẢN LÝ CHUNG CƯ BLUEMOON
+# TÀI LIỆU THIẾT KẾ HỆ THỐNG PHẦN MỀM QUẢN LÝ CHUNG CƯ 
 
 ## 1. GIỚI THIỆU CHUNG
 
 ### 1.1. Mục đích tài liệu
 
-Tài liệu này mô tả mục tiêu và phạm vi của hệ thống phần mềm quản lý chung cư BlueMoon, nhằm hỗ trợ Ban Quản Trị trong việc quản lý thu phí, thông tin cư dân và phương tiện một cách hiệu quả. Tài liệu cung cấp chi tiết về các chức năng, kiến trúc và các thành phần chính của hệ thống.
+Tài liệu này mô tả mục tiêu và phạm vi của hệ thống phần mềm quản lý chung cư, nhằm hỗ trợ Ban Quản Trị trong việc quản lý thu phí, thông tin cư dân và phương tiện một cách hiệu quả. Tài liệu cung cấp chi tiết về các chức năng, kiến trúc và các thành phần chính của hệ thống.
 
 **Mục tiêu:**
 
@@ -15,12 +15,12 @@ Tài liệu này mô tả mục tiêu và phạm vi của hệ thống phần m�
 **Đối tượng sử dụng tài liệu:**
 
 - Nhóm phát triển phần mềm.
-- Ban Quản Trị chung cư BlueMoon.
+- Ban Quản Trị chung cư.
 - Các bên liên quan trong quá trình xây dựng và triển khai hệ thống.
 
 ### 1.2. Phạm vi hệ thống
 
-Hệ thống phần mềm quản lý chung cư BlueMoon được xây dựng nhằm hỗ trợ Ban Quản Trị thực hiện các công việc quản lý thu phí, cư dân và phương tiện. Phần mềm này sẽ thay thế phương pháp thủ công bằng một nền tảng số hóa hiện đại, giúp tối ưu hóa quy trình làm việc.
+Hệ thống phần mềm quản lý chung cư được xây dựng nhằm hỗ trợ Ban Quản Trị thực hiện các công việc quản lý thu phí, cư dân và phương tiện. Phần mềm này sẽ thay thế phương pháp thủ công bằng một nền tảng số hóa hiện đại, giúp tối ưu hóa quy trình làm việc.
 
 **Mục tiêu kinh doanh và lợi ích:**
 
@@ -31,7 +31,7 @@ Hệ thống phần mềm quản lý chung cư BlueMoon được xây dựng nh�
 
 **Các bên liên quan:**
 
-- Ban Quản Trị chung cư BlueMoon: Quản lý toàn bộ hệ thống.
+- Ban Quản Trị chung cư: Quản lý toàn bộ hệ thống.
 - Cư dân chung cư: Người đóng các khoản phí và sử dụng dịch vụ.
 - Nhà cung cấp dịch vụ (điện, nước, internet)\*\*: Cung cấp thông tin hóa đơn cho Ban Quản Trị để thu hộ.
 
@@ -44,8 +44,8 @@ Hệ thống phần mềm quản lý chung cư BlueMoon được xây dựng nh�
 ### 1.4. Định nghĩa và từ viết tắt
 
 - UC: Use Case - Trường hợp sử dụng.
-- Ban Quản Trị: Ban Quản Trị chung cư BlueMoon.
-- Cư dân: Người sinh sống tại chung cư BlueMoon.
+- Ban Quản Trị: Ban Quản Trị chung cư.
+- Cư dân: Người sinh sống tại chung cư.
 - Phí dịch vụ: Khoản phí bắt buộc hàng tháng dựa trên diện tích căn hộ.
 - Phí quản lý: Chi phí vận hành chung cư, thu theo m2.
 - Phí gửi xe: Phí đăng ký xe máy, ô tô hàng tháng.
