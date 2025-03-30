@@ -20,17 +20,22 @@
 ### **Performance requirements (Yêu cầu về hiệu suất)**  
 - **Mô tả**: Phần mềm cần đáp ứng yêu cầu về tốc độ xử lý và thời gian phản hồi của các chức năng cơ bản.
 - **Cụ thể**:
-    - **Thời gian phản hồi**: Các thao tác như tra cứu thông tin hộ gia đình, kiểm tra các khoản phí, thống kê số liệu cần có thời gian phản hồi dưới 3 giây.
-    - **Khả năng xử lý đồng thời**: Phần mềm cần hỗ trợ ít nhất 10 người dùng đồng thời mà không giảm hiệu suất, đặc biệt là vào các đợt thu phí lớn.
+    - Đối với màn hình input: tối đa 30 trường dữ liệu, không tính toán dữ liệu phức tạp, không tương tác với hệ thống ngoài, có thể lưu trữ dữ liệu trực tiếp ngay xuống DB, và không lưu trữ các tệp nội dung lớn như: hình ảnh, video, tệp tin quá 3MB.
+    - Đối với màn hình output: dữ liệu được query trực tiếp từ DB, hạn chế những query phức tạp, những query từ hệ thống ngoài.
+Hiển thị tối đa 50 dòng dữ liệu, mỗi dòng tối đa 10 cột, và mỗi dữ liệu có độ dài nhỏ hơn 100 ký tự.
+    - Điều kiện tải bình thường: 30 CCU (concurrent user – người dùng đồng thời) khi không dùng cân bằng tải.
+    - Điều kiện server tối thiểu: Intel Core i5, 4GB RAM, 500GB hard disk.
 
 ---
 
 ### **Security requirements (Yêu cầu về bảo mật)**  
 - **Mô tả**: Phần mềm cần bảo vệ thông tin nhạy cảm của cư dân và các khoản thu phí khỏi các truy cập trái phép.
 - **Cụ thể**:
-    - **Xác thực người dùng**: Sử dụng hàm băm an toàn như SHA để lưu trữ thông tin đăng nhập của người dùng. Duy trì phiên hoạt động của người dùng thông qua cookie với các trường bảo mật như http-only, same-site=strict,... Đối với các thao tác có tương tác với dữ liệu như POST, PUT, PATCH, DELETE cần sử dụng các biện pháp bảo vệ như CSRF.
-    - **Mã hóa dữ liệu**: Sử dụng HTTPS để mã hóa dữ liệu trước khi truyền trên kết nối TCP.
-    - **Phân quyền**: sử dụng Role Based Access Control để phân quyền người dùng.
+    - Password của người dùng phải được hash bằng MD5.
+    - Hệ thống sẽ deactivate 30 phút nếu người dùng nhập password sai 5 lần liên tiếp.
+    - Tất cả những data “nhạy cảm” của người dùng như: password, SĐT, CMND, email phải được mã hóa bằng 1024bit SSL.
+    - Khi user quên mật khẩu, link tạo mật khẩu mới phải được gửi về duy nhất địa chỉ email đăng ký đầu tiên.
+    - Hoặc khi user thực hiện thanh toán online, hệ thống không được phép lưu trữ thông tin thẻ credit/ debit của user.
 
 ---
 
@@ -46,13 +51,16 @@
 ### **Scalability requirements (Yêu cầu về khả năng mở rộng)**  
 - **Mô tả**: Phần mềm cần có khả năng mở rộng khi số lượng cư dân tăng lên hoặc khi có thêm các khoản thu phí mới.
 - **Cụ thể**:
-    - **Mở rộng dữ liệu**: Phần mềm cần có khả năng lưu trữ và quản lý thông tin cho hàng nghìn hộ gia đình và các khoản thu phí một cách hiệu quả.
-    - **Thêm tính năng**: Cần có khả năng thêm các tính năng mới trong tương lai, ví dụ như quản lý các khoản phí gửi xe hay các khoản phí từ các dịch vụ khác.
+    - Server có khả năng upgrade cấu hình.
+    - Có khả năng tách DB trên một server riêng và backend trên một server riêng.
+    - Có khả năng áp dụng load balancer chạy bằng HA Proxy.
+    - Có khả năng chia nhỏ DB master thành các DB con và đồng bộ ngược trở lại.
 
 ---
 
 ### **Maintainability requirements (Yêu cầu về khả năng duy trì)**  
 - **Mô tả**: Phần mềm cần được thiết kế sao cho dễ bảo trì và cập nhật khi cần thiết.
 - **Cụ thể**:
-    - **Bảo trì và nâng cấp**: Cần có cơ chế để cập nhật và nâng cấp phần mềm mà không làm gián đoạn dịch vụ.
-    - **Xử lý lỗi và sửa lỗi**: Cần có cơ chế phát hiện và khắc phục lỗi nhanh chóng, giúp phần mềm luôn hoạt động ổn định.
+    - Với mỗi lần nâng cấp hệ thống định kỳ hàng quý sẽ không kéo dài quá 30 phút.
+    - Toàn bộ code Javascript và .NET phải được viết theo coding convention.
+    - Document và code phải được review nội bộ qua 2 cấp.
