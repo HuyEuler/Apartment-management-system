@@ -44,3 +44,11 @@
 - Biểu đồ usecase phân rã cho "Quản lý phương tiện"
 
 - Biểu đồ usecase phân rã cho "Quản lý phí thu"
+
+**Quản lý dân cư**
+![Sơ đồ quản lý dân cư](quanlidancu.png)
+
+---
+
+**Quản lý căn hộ**
+![Sơ đồ quản lý căn hộ](quanlycanho.png)
