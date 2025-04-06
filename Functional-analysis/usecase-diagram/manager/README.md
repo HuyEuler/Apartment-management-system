@@ -19,35 +19,37 @@
 
 ## 👀 Use case chi tiết:
 
-**Use Case Name:** Duyệt yêu cầu của cư dân
+Dưới đây là một use case điển hình của actor **Ban quản lý chung cư**:
 
-**Scenario:** Duyệt yêu cầu đặt, đổi hoặc trả phòng của cư dân
+**- Use Case Name:** Duyệt yêu cầu của cư dân
 
-**Triggering Event:** Cư dân gửi yêu cầu đặt phòng, đổi phòng hoặc trả phòng thông qua hệ thống.
+**- Scenario:** Duyệt yêu cầu đặt, đổi hoặc trả phòng của cư dân
 
-**Brief Description:** Khi cư dân gửi yêu cầu đặt mới, đổi hoặc trả phòng, ban quản lý sẽ nhận thông báo, kiểm tra thông tin yêu cầu, xác minh tình trạng phòng, xác nhận hoặc từ chối yêu cầu và thông báo lại cho cư dân.
+**- Triggering Event:** Cư dân gửi yêu cầu đặt phòng, đổi phòng hoặc trả phòng thông qua hệ thống.
 
-**Actors:** Ban quản lý chung cư
+**- Brief Description:** Khi cư dân gửi yêu cầu đặt mới, đổi hoặc trả phòng, ban quản lý sẽ nhận thông báo, kiểm tra thông tin yêu cầu, xác minh tình trạng phòng, xác nhận hoặc từ chối yêu cầu và thông báo lại cho cư dân.
 
-**Related Use Cases:** Xem thông tin phòng, Thông báo cho cư dân
+**- Actors:** Ban quản lý chung cư
 
-**Stakeholders:**
+**- Related Use Cases:** Xem thông tin phòng, Thông báo cho cư dân
+
+**- Stakeholders:**
 
 - Bộ phận quản lý cư dân: Kiểm tra và xử lý yêu cầu cư dân.
 - Bộ phận quản lý phòng: Xác nhận trạng thái phòng có thể đáp ứng yêu cầu hay không.
 
-**Preconditions:**
+**- Preconditions:**
 
 - Cư dân phải tồn tại trong hệ thống.
 - Các thông tin về phòng phải luôn được cập nhật đầy đủ, chính xác.
 
-**Postconditions:**
+**- Postconditions:**
 
 - Yêu cầu của cư dân được cập nhật trạng thái là đã duyệt hoặc từ chối.
 - Thông tin phòng được cập nhật theo yêu cầu đã được duyệt (nếu có).
 - Cư dân nhận được thông báo kết quả yêu cầu.
 
-**Flow of Activities:**
+**- Flow of Activities:**
 
 | Actor                                                                                                                         | System                                                          |
 | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
@@ -59,7 +61,7 @@
 | 6. Ban quản lý xác nhận và cập nhật trạng thái của yêu cầu.                                                                   | 6.1 Cập nhật trạng thái của yêu cầu (đã duyệt hoặc đã từ chối). |
 | 7. Ban quản lý gửi thông báo kết quả cho cư dân.                                                                              | 7.1 Tạo và gửi thông báo kết quả xử lý cho cư dân.              |
 
-**Exception Conditions:**
+**- Exception Conditions:**
 
 - Nếu cư dân không tồn tại trong hệ thống, ban quản lý dừng xử lý và yêu cầu cập nhật thông tin cư dân.
 - Nếu phòng yêu cầu không hợp lệ hoặc không thể đáp ứng, ban quản lý sẽ từ chối yêu cầu và thông báo lý do từ chối cho cư dân.
