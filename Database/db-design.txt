@@ -1,0 +1,84 @@
+// https://dbdiagram.io/d/671c304a97a66db9a35172b7
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table User{
+  userId int [primary key, increment]
+  role nvarchar(50) [not null]
+  apartmentId int [not null]
+  name nvarchar(50) [not null]
+  birthday date [not null]
+  gender bit 
+  phoneNumber nvarchar(12) [not null]
+  nationality nvarchar(50)
+  image varbinary(MAX)
+  address nvarchar(100)
+  isOwner bit 
+  relationshipWithOwner nvarchar(50) 
+  status int 
+}
+
+Table Login{
+  userId int [primary key, unique]
+  username varchar(50) [not null]
+  password varchar(50) [not null]
+}
+
+Ref : Login.userId > User.userId
+
+Table Apartment{
+  apartmentId int [primary key, increment]
+  ownerId int [not null]
+  area float [not null]
+  floor int [not null]
+  room nvarchar(20) [not null]
+}
+
+Ref : Apartment.ownerId > User.userId
+Ref : User.apartmentId > Apartment.apartmentId
+
+Table Activity{
+  activityId int [primary key, increment]
+  residentId int [not null]
+  status int [not null]
+  dateOfEvent date [not null]
+  note nvarchar(500) 
+}
+
+Ref : Activity.residentId > User.userId
+
+Table Fee {
+  feeId int [primary key, increment]
+  name varchar(255) [not null]
+  createTime date [not null]  
+  ratePerSquareMeter double [not null]
+  isMandatory boolean [not null]
+  feeType varchar(50) 
+  payForMonthCycle int [not null]
+  payForYearCycle int [not null]
+  providerName nvarchar(100)
+}
+
+Table Payment {
+  paymentId int [primary key, increment]
+  feeId int 
+  apartmentId int [not null]
+  amountDue double [not null]
+  amountPaid double [not null]
+  paymentDate date [not null]
+  // status varchar(50)
+}
+Ref : Payment.apartmentId > Apartment.apartmentId
+Ref : Payment.feeId > Fee.feeId
+
+Table Vehicle{
+  vehicleId int [primary key, increment]
+  residentId int [not null]
+  type nvarchar(30) [not null]
+  licensePlate varchar(30) [not null]
+}
+Ref : Vehicle.residentId > User.userId
+
+
+
+

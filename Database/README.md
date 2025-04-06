@@ -1,5 +1,9 @@
 # Thiết kế cơ sở dữ liệu - Hệ thống quản lý chung cư
 
+Sơ đồ thiết kế cơ sở dữ liệu 
+
+![Sơ đồ thiết kế cơ sở dữ liệu ](./Apartment-management%20.png)
+
 Dưới đây là phần giải thích chi tiết ý nghĩa các bảng trong hệ thống quản lý chung cư cùng với bảng mô tả các trường dữ liệu trong từng bảng.
 
 ---
@@ -10,14 +14,14 @@ Bảng lưu thông tin cư dân và ban quản lý chung cư.
 | Trường | Kiểu dữ liệu | Ý nghĩa |
 |--------|---------------|---------|
 | userId | int (PK) | Mã định danh người dùng |
-| role | nvarchar(50) | Vai trò của người dùng (`resident`, `management`) |
+| role | nvarchar(50) | 2 role (`resident` : cư dân, `management` : ban quản lý) |
 | apartmentId | int | Mã căn hộ người dùng đang ở |
 | name | nvarchar(50) | Họ tên người dùng |
 | birthday | date | Ngày sinh |
 | gender | bit | Giới tính (1: Nam, 0: Nữ) |
 | phoneNumber | nvarchar(12) | Số điện thoại |
 | nationality | nvarchar(50) | Quốc tịch |
-| image | varbinary(MAX) | Ảnh chân dung |
+| image | varbinary(MAX) | Ảnh đại diện |
 | address | nvarchar(100) | Địa chỉ thường trú |
 | isOwner | bit | Có phải chủ hộ hay không |
 | relationshipWithOwner | nvarchar(50) | Quan hệ với chủ hộ (nếu không phải chủ hộ) |
@@ -57,8 +61,7 @@ Theo dõi trạng thái và thời gian cư trú của cư dân.
 | activityId | int (PK) | Mã hoạt động |
 | residentId | int | Mã cư dân |
 | status | int | Trạng thái: -1 (chưa đặt phòng), 0 (đã rời), 1 (thường trú), 2 (tạm trú), 3 (tạm vắng) |
-| timeIn | date | Ngày vào |
-| timeOut | date | Ngày rời |
+| dateOfEvent | date | Ngày diễn ra sự kiện |
 | note | nvarchar(500) | Ghi chú |
 
 ---
@@ -70,12 +73,12 @@ Theo dõi trạng thái và thời gian cư trú của cư dân.
 |--------|---------------|---------|
 | feeId | int (PK) | Mã phí |
 | name | varchar(255) | Tên phí |
-| createTime | time | Thời gian tạo phí |
+| createTime | date | Ngày tạo phí |
 | ratePerSquareMeter | double | Mức phí tính trên m² |
 | isMandatory | boolean | Có bắt buộc hay không |
 | feeType | varchar(50) | Loại phí (`service fee`, `contribution fee`) |
-| payForMonthCycle | int | Chu kỳ đóng phí hàng tháng (0 nếu không áp dụng) |
-| payForYearCycle | int | Chu kỳ đóng phí hàng năm (0 nếu không áp dụng) |
+| payForMonthCycle | int | Chu kỳ đóng phí hàng tháng (= 0 nếu không áp dụng) |
+| payForYearCycle | int | Chu kỳ đóng phí hàng năm (= 0 nếu không áp dụng) |
 | providerName | nvarchar(100) | Tên đơn vị cung cấp dịch vụ (nếu có) |
 
 ---
