@@ -55,19 +55,13 @@ APARTMENT-MANAGEMENT/
 ├── Functional-analysis/          # Phân tích chức năng
 │   ├── activity-diagram/         # Activity Diagram
 │   ├── usecase-diagram/          # Usecase Diagram (Client, Manager, Service-provider)
-│   ├── image.png
-│   ├── quanlidanccu.png
-│   ├── quanlycanho.png
 │   └── README.md
-│
-├── Instruction/                  # Hướng dẫn đọc dự án (file này)
 │
 ├── Interactive-analysis/         # Sequence Diagram
 │   └── sequence-diagram/
 │   └── README.md
 │
 ├── Meeting-notes/                # Ghi chú quá trình làm việc
-│   └── 30-3.md
 │
 ├── Requirement-analysis/         # Phân tích yêu cầu
 │   ├── Functional_Requirements/  # Yêu cầu chức năng
