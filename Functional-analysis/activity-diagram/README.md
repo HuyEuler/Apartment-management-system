@@ -30,7 +30,34 @@ Tài liệu này mô tả quy trình đăng ký tài khoản người dùng đư
 6. **Khởi tạo người dùng**
    - Hệ thống tạo tài khoản người dùng mới và sẵn sàng để đăng nhập, sử dụng.
 ![alt text](image.png)
-## Ghi chú
+
+### Các bước thực hiện
+
+1. **Start**  
+   Bắt đầu quá trình đăng nhập.
+
+2. **Input Username**  
+   Người dùng nhập tên tài khoản (username).
+
+3. **Input Password**  
+   Người dùng nhập mật khẩu (password).
+
+4. **Validate Credentials**  
+   Hệ thống kiểm tra thông tin đăng nhập:
+   - Nếu đúng → chuyển đến bước 5.
+   - Nếu sai → quay lại bước 2 để nhập lại thông tin.
+
+5. **Login Success**  
+   Đăng nhập thành công, kết thúc quy trình.
+
+6. **Login Failed**  
+   Đăng nhập thất bại, yêu cầu người dùng thử lại.
+
+7. **End**  
+   Kết thúc quy trình.
+![alt text](image-1.png)
+
+# Ghi chú
 
 - Sẽ bổ sung thêm và sửa lại chi tiết hơn @@@
 
