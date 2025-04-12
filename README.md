@@ -1,8 +1,6 @@
 # TÀI LIỆU THIẾT KẾ HỆ THỐNG PHẦN MỀM QUẢN LÝ CHUNG CƯ
 
-## 1. GIỚI THIỆU CHUNG
-
-### 1.1. Mục đích tài liệu
+## 1. Mục đích tài liệu
 
 Tài liệu này mô tả mục tiêu và phạm vi của hệ thống phần mềm quản lý chung cư, nhằm hỗ trợ Ban Quản Trị trong việc quản lý thu phí, thông tin cư dân và phương tiện một cách hiệu quả. Tài liệu cung cấp chi tiết về các chức năng, kiến trúc, các thành phần chính của hệ thống và hướng dẫn.
 
@@ -18,13 +16,13 @@ Tài liệu này mô tả mục tiêu và phạm vi của hệ thống phần m�
 - Ban Quản Trị chung cư.
 - Các bên liên quan trong quá trình xây dựng và triển khai hệ thống.
 
-### 1.2. Tài liệu tham khảo
+## 2. Tài liệu tham khảo
 
 - Tài liệu yêu cầu hệ thống.
 - Các tài liệu hướng dẫn kỹ thuật liên quan đến công nghệ sử dụng (React, Node.js, v.v.).
 - Tiêu chuẩn bảo mật dữ liệu.
 
-### 1.3. Định nghĩa và từ viết tắt
+## 3. Định nghĩa và từ viết tắt
 
 - UC: Use Case - Trường hợp sử dụng.
 - Ban Quản Trị: Ban Quản Trị chung cư.
