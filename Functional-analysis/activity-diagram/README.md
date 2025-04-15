@@ -31,6 +31,7 @@ Tài liệu này mô tả quy trình đăng ký tài khoản người dùng đư
    - Hệ thống tạo tài khoản người dùng mới và sẵn sàng để đăng nhập, sử dụng.
 ![alt text](image.png)
 
+## 2: Đăng nhập tài khoản
 ### Các bước thực hiện
 
 1. **Start**  
@@ -56,6 +57,13 @@ Tài liệu này mô tả quy trình đăng ký tài khoản người dùng đư
 7. **End**  
    Kết thúc quy trình.
 ![alt text](image-1.png)
+
+## 3: Đặt phòng
+### Các bước thực hiện
+![alt text](image-2.png)
+
+
+---
 
 # Ghi chú
 
