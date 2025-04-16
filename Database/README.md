@@ -14,7 +14,7 @@ Bảng lưu thông tin cư dân và ban quản lý chung cư.
 | Trường | Kiểu dữ liệu | Ý nghĩa |
 |--------|---------------|---------|
 | userId | int (PK) | Mã định danh người dùng |
-| role | nvarchar(50) | 2 role (`resident` : cư dân, `management` : ban quản lý) |
+| role | nvarchar(50) | 2 role (`resident` : cư dân, `manager` : ban quản lý) |
 | apartmentId | int | Mã căn hộ người dùng đang ở |
 | name | nvarchar(50) | Họ tên người dùng |
 | birthday | date | Ngày sinh |
