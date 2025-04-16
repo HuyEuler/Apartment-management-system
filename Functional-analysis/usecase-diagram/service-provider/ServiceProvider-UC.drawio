@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0" version="26.2.13">
+  <diagram name="Page-1" id="runFBSX1r5VZaRPLSe7-">
+    <mxGraphModel dx="990" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-1" value="Service Provider" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="305" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-2" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="160" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-3" value="Provide service cost" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-8" value="Vertical Container" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="150" width="480" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-5" value="Choose room" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="0tq_MUMIocgndL_GW9QJ-8">
+          <mxGeometry x="300" y="150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-4" value="Choose service" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="0tq_MUMIocgndL_GW9QJ-8">
+          <mxGeometry x="300" y="40" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-7" value="Provide cost information" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="0tq_MUMIocgndL_GW9QJ-8">
+          <mxGeometry x="300" y="250" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0tq_MUMIocgndL_GW9QJ-1" target="0tq_MUMIocgndL_GW9QJ-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="350" as="sourcePoint" />
+            <mxPoint x="300" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0tq_MUMIocgndL_GW9QJ-1" target="0tq_MUMIocgndL_GW9QJ-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="300" as="sourcePoint" />
+            <mxPoint x="290" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-14" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="0tq_MUMIocgndL_GW9QJ-3" target="0tq_MUMIocgndL_GW9QJ-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="290" as="sourcePoint" />
+            <mxPoint x="710" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-15" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0tq_MUMIocgndL_GW9QJ-3" target="0tq_MUMIocgndL_GW9QJ-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="529" y="320" as="sourcePoint" />
+            <mxPoint x="620" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0tq_MUMIocgndL_GW9QJ-16" value="&amp;lt;&amp;lt;Include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="0tq_MUMIocgndL_GW9QJ-3" target="0tq_MUMIocgndL_GW9QJ-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="345" as="sourcePoint" />
+            <mxPoint x="620" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

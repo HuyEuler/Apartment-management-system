@@ -1,8 +1,12 @@
-### ✅ **Bảng Use Case đầy đủ:**
+## 🔗 **Biểu đồ Use case:**
+![alt text](ServiceProvider-UC.drawio.svg)
+
+## ✅ **Bảng Use Case đầy đủ:**
 
 | STT | Tên Use Case                | Mô tả ngắn gọn                                                                                                         |
 | --- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1   | Cung cấp dữ liệu thanh toán | Cung cấp dữ liệu sử dụng dịch vụ (điện, nước, internet, gửi xe,…) theo từng cư dân hoặc từng phòng để phục vụ thu phí. |
+| 1   | Đăng nhập hệ thống              | Đăng nhập vào hệ thống với tài khoản của nhà dịch vụ để thực hiện các chức năng cung cấp dữ liệu.                               |
+| 2   | Cung cấp dữ liệu thanh toán | Cung cấp dữ liệu sử dụng dịch vụ (điện, nước, internet, gửi xe,…) theo từng cư dân hoặc từng phòng để phục vụ thu phí. |
 
 ## 👀 Use case chi tiết:
 Dưới đây là một use case chi tiết điển hình của actor **Nhà cung cấp dịch vụ**:
