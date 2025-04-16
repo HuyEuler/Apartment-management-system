@@ -32,7 +32,7 @@
 #### 1.2.1. Biểu đồ use case tổng quát
 
 <div style="text-align:center">
-    <img src = "image.png">
+    <img src = "client/client-usecase_diagram.png">
 </div>
 
 #### 1.2.2. Biểu đồ use case phân rã mức 
