@@ -1,4 +1,4 @@
-## **Biểu đồ Use case:**
+## 🔗 **Biểu đồ Use case:**
 ![alt text](Manager-UC.drawio.svg)
 
 ## ✅ **Bảng Use Case đầy đủ:**
