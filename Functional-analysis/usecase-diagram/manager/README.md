@@ -1,19 +1,18 @@
 ## ✅ **Bảng Use Case đầy đủ:**
 
-| STT | Tên Use Case                    | Mô tả ngắn gọn                                                                               |
-| --- | ------------------------------- | -------------------------------------------------------------------------------------------- |
-| 1   | Đăng nhập hệ thống              | Đăng nhập vào hệ thống với tài khoản quản trị để thực hiện các chức năng quản lý.            |
-| 2   | Quản lý thông tin cư dân        | Thêm, sửa, xóa, cập nhật thông tin của cư dân trong chung cư.                                |
-| 3   | Quản lý danh sách phòng         | Quản lý (thêm, sửa, xóa, cập nhật) thông tin, trạng thái các phòng trong chung cư.           |
-| 4   | Xem thông tin cư dân            | Xem và tìm kiếm danh sách cư dân đang cư trú tại chung cư.                                   |
-| 5   | Xem thông tin phòng             | Xem và tìm kiếm danh sách, trạng thái phòng hiện có trong chung cư.                          |
-| 6   | Duyệt yêu cầu của cư dân        | Phê duyệt hoặc từ chối các yêu cầu đặt phòng, đổi phòng, trả phòng do cư dân gửi.            |
-| 7   | Quản lý hợp đồng thuê phòng     | Tạo mới, cập nhật, gia hạn hoặc chấm dứt hợp đồng thuê phòng của cư dân.                     |
-| 8   | Tạo và quản lý khoản phí        | Tạo các khoản phí (phí điện, nước, vệ sinh, bảo trì, phí gửi xe…) theo định kỳ hoặc một lần. |
-| 9   | Theo dõi và cập nhật thanh toán | Theo dõi, cập nhật trạng thái thanh toán và gửi nhắc nhở cho các khoản phí của cư dân.       |
-| 10  | Xem lịch sử thanh toán          | Tra cứu lịch sử thanh toán của cư dân theo phòng, khoản phí và thời gian cụ thể.             |
-| 11  | Thông báo cho cư dân            | Gửi các thông báo, thông tin cần thiết đến cư dân qua hệ thống, email hoặc ứng dụng.         |
-| 12  | Xuất báo cáo thống kê           | Xuất báo cáo tổng hợp về cư dân, tình trạng phòng, doanh thu và công nợ của chung cư.        |
+| STT | Tên Use Case                    | Mô tả ngắn gọn                                                                                                  |
+| --- | ------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 1   | Đăng nhập hệ thống              | Đăng nhập vào hệ thống với tài khoản quản trị để thực hiện các chức năng quản lý.                               |
+| 2   | Quản lý thông tin cư dân        | Thêm, sửa, xóa, cập nhật thông tin của cư dân trong chung cư.                                                   |
+| 3   | Quản lý danh sách phòng         | Quản lý (thêm, sửa, xóa, cập nhật) thông tin, trạng thái các phòng trong chung cư.                              |
+| 4   | Xem thông tin cư dân            | Xem và tìm kiếm danh sách cư dân đang cư trú tại chung cư.                                                      |
+| 5   | Xem thông tin phòng             | Xem và tìm kiếm danh sách, trạng thái phòng hiện có trong chung cư.                                             |
+| 6   | Duyệt yêu cầu của cư dân        | Phê duyệt hoặc từ chối các yêu cầu đặt phòng, đổi phòng, trả phòng do cư dân gửi.                               |
+| 7   | Quản lý hợp đồng thuê phòng     | Tạo mới, cập nhật, gia hạn hoặc chấm dứt hợp đồng thuê phòng của cư dân.                                        |
+| 8   | Tạo và quản lý khoản phí        | Tạo các khoản phí (phí điện, nước, vệ sinh, bảo trì, phí gửi xe…) theo định kỳ hoặc một lần.                    |
+| 9   | Quản lý thanh toán              | Tra cứu lịch sử thanh toán của cư dân theo phòng, khoản phí và thời gian cụ thể, cập nhật trạng thái thanh toán.|
+| 10  | Thông báo cho cư dân            | Gửi các thông báo, thông tin cần thiết đến cư dân qua hệ thống, email hoặc ứng dụng.                            |
+| 11  | Xuất báo cáo thống kê           | Xuất báo cáo tổng hợp về cư dân, tình trạng phòng, doanh thu và công nợ của chung cư.                           |
 
 ---
 
