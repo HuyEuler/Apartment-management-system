@@ -1,3 +1,6 @@
+## **Biểu đồ Use case:**
+![alt text](Manager-UC.drawio.svg)
+
 ## ✅ **Bảng Use Case đầy đủ:**
 
 | STT | Tên Use Case                    | Mô tả ngắn gọn                                                                               |
