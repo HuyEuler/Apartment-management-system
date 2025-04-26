@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
   <diagram name="Trang-1" id="58Z3_BH4jIx3prpK2FC-">
     <mxGraphModel dx="1092" dy="742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
@@ -35,17 +34,19 @@
         <mxCell id="ra3UjZoKNm8svRvOKKK3-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ra3UjZoKNm8svRvOKKK3-2" source="ra3UjZoKNm8svRvOKKK3-34" target="ra3UjZoKNm8svRvOKKK3-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ra3UjZoKNm8svRvOKKK3-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ra3UjZoKNm8svRvOKKK3-2" source="ra3UjZoKNm8svRvOKKK3-34" target="ra3UjZoKNm8svRvOKKK3-36" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ra3UjZoKNm8svRvOKKK3-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ra3UjZoKNm8svRvOKKK3-2" source="ra3UjZoKNm8svRvOKKK3-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="39.99999666666622" y="340" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="ra3UjZoKNm8svRvOKKK3-34" value="Confirm" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="ra3UjZoKNm8svRvOKKK3-2" vertex="1">
           <mxGeometry x="60" y="299.99" width="105" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="ra3UjZoKNm8svRvOKKK3-36" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="ra3UjZoKNm8svRvOKKK3-2" vertex="1">
-          <mxGeometry x="10" y="324.99" width="30" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="ra3UjZoKNm8svRvOKKK3-39" value="Fill payment information form" style="whiteSpace=wrap;html=1;rounded=1;" parent="ra3UjZoKNm8svRvOKKK3-2" vertex="1">
           <mxGeometry x="52.5" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CCb7hwlriBmFhbB9g7oW-1" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="ra3UjZoKNm8svRvOKKK3-2">
+          <mxGeometry x="5" y="329.99" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="ra3UjZoKNm8svRvOKKK3-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="ra3UjZoKNm8svRvOKKK3-1" source="ra3UjZoKNm8svRvOKKK3-9" target="ra3UjZoKNm8svRvOKKK3-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
