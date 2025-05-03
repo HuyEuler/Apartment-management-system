@@ -1,0 +1,3 @@
+- Quá nhiều usecase không nối với actor 
+- Các usecase select room, pay deposit, provide booking in4, send booking request có thể gộp lại 
+- Không nên dùng plan arrow 

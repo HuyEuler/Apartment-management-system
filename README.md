@@ -77,12 +77,11 @@ APARTMENT-MANAGEMENT/
 
 | Thứ tự | Vị trí | Nội dung cần xem |
 |--------|--------|-----------------|
-|1|README.md (root)|Tổng quan nội dung project|
-|2|Requirement-analysis/|Toàn bộ yêu cầu hệ thống|
-|3|Functional-analysis/|Phân tích chức năng, sơ đồ Usecase, Activity|
-|4|Interactive-analysis/|Phân tích luồng hoạt động qua sequence diagram|
-|5|Database/|Thiết kế CSDL|
-|6|Meeting-notes/|Theo dõi quá trình họp và thống nhất nhóm|
+|1|Requirement-analysis/|Toàn bộ yêu cầu hệ thống|
+|2|Functional-analysis/|Phân tích chức năng, sơ đồ Usecase, Activity|
+|3|Interactive-analysis/|Phân tích luồng hoạt động qua sequence diagram|
+|4|Database/|Thiết kế CSDL|
+|5|Meeting-notes/|Theo dõi quá trình họp và thống nhất nhóm|
 
 ---
 
