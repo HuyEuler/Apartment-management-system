@@ -1,0 +1,3 @@
+- Dùng tiếng Anh
+- Xem lại các case đúng chương trình chưa. (Phúc có góp ý sửa lại luồng chính).
+- Đổi tên cho thống nhất với văn bản báo cáo.
