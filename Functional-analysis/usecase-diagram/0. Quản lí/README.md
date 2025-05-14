@@ -1,67 +1,75 @@
-## 👀 Use case chi tiết:
+## ✅ **Use Case: Thay đổi trạng thái cư trú**
 
-Dưới đây là một use case điển hình liên quan đến **Customer quản lý tài khoản**:
+---
 
-**- Tên Use Case:** Quản lý tài khoản cư dân
+### **1. Tên Use Case:**  
+**Thay đổi trạng thái cư trú của cư dân**
 
-**- Ngữ cảnh:** Cư dân thực hiện quản lý thông tin tài khoản cá nhân và thay đổi trạng thái cư trú nếu cần.
+---
 
-**- Sự kiện kích hoạt:** Cư dân truy cập hệ thống và thao tác quản lý tài khoản.
+### **2. Ngữ cảnh:**  
+Cư dân muốn cập nhật trạng thái cư trú (ví dụ: đang ở, tạm vắng, chuyển đi, chuyển căn) thông qua hệ thống. Quản lý sẽ xem xét và phê duyệt (hoặc từ chối) yêu cầu dựa trên minh chứng và thông tin bổ sung được cung cấp.
 
-**- Mô tả:**
-Khi cư dân muốn quản lý tài khoản, họ có thể xem thông tin, cập nhật thông tin hoặc thay đổi trạng thái cư trú. Nếu yêu cầu thay đổi trạng thái cư trú, cư dân cần cung cấp minh chứng. Quản lý sẽ nhận, kiểm tra, xác thực thông tin và quyết định duyệt hoặc chuyển tiếp yêu cầu cho nhà cung cấp dịch vụ nếu cần. Sau đó, thông tin cư trú sẽ được cập nhật.
+---
 
-**- Tác nhân:**
+### **3. Tác nhân chính:**  
+- **Cư dân (Customer)**
+- **Ban quản lý (Manager)**
 
-* Cư dân (Customer)
-* Ban quản lý (Manager)
+---
 
-**- Use case liên hệ:**
+### **4. Các use case liên quan:**
+- **Include:**  
+  - Cung cấp thông tin  
+  - Cung cấp minh chứng  
+  - Xác thực thông tin  
+  - Cập nhật trạng thái cư dân  
+  - Cập nhật trạng thái phòng  
+  - Thông báo cho cư dân  
 
-* Xem thông tin tài khoản
-* Cập nhật thông tin tài khoản
-* Thay đổi trạng thái cư trú
-* Xem đơn yêu cầu
-* Xác thực thông tin
-* Cập nhật trạng thái cư trú
+- **Extend:**  
+  - Cung cấp thông tin bổ sung (tùy trường hợp)  
+  - Đồng ý (Manager chọn duyệt)  
+  - Từ chối (Manager chọn từ chối)
 
-**- Bên liên quan:**
+---
 
-* Cư dân: Người yêu cầu thay đổi thông tin.
-* Ban quản lý: Xem xét, xác thực và cập nhật thông tin cư trú.
-* Nhà cung cấp dịch vụ: Tham gia xử lý nếu cần thiết.
+### **5. Tiền điều kiện:**  
+- Cư dân đã đăng nhập vào hệ thống.  
+- Tài khoản và thông tin thuê phòng của cư dân đã tồn tại trong hệ thống.
 
-**- Tiền điều kiện:**
+---
 
-* Cư dân phải đăng nhập hệ thống.
-* Thông tin tài khoản đã có sẵn trong hệ thống.
+### **6. Hậu điều kiện:**  
+- Trạng thái cư trú được cập nhật (nếu yêu cầu được duyệt).  
+- Cư dân được thông báo về kết quả.  
+- Trạng thái phòng được cập nhật nếu liên quan.
 
-**- Hậu điều kiện:**
+---
 
-* Thông tin tài khoản được cập nhật.
-* Trạng thái cư trú của cư dân được thay đổi (nếu được duyệt).
-* Cư dân nhận thông báo kết quả.
+### **7. Luồng sự kiện chính (Main Flow)**
 
-**- Luồng sự kiện:**
+| **Actor**                   | **System**                                                                 |
+|----------------------------|----------------------------------------------------------------------------|
+| 1. Cư dân yêu cầu thay đổi trạng thái cư trú. | 1.1 Khởi tạo yêu cầu mới.                                              |
+| 2. **Include: Cung cấp thông tin** | 2.1 Nhập thông tin trạng thái cư trú mong muốn.                         |
+| 3. **Include: Cung cấp minh chứng** | 2.2 Tải lên tài liệu/minh chứng.                                       |
+| 4. **Extend: Cung cấp thông tin bổ sung** *(nếu có yêu cầu thêm)* | 2.3 Ghi nhận dữ liệu bổ sung.                                          |
+| 5. Hệ thống gửi yêu cầu đến Manager. | 2.4 Thông báo cho ban quản lý về yêu cầu mới.                           |
+| 6. Manager xem xét yêu cầu.       | 2.5 Hiển thị thông tin chi tiết và minh chứng.                         |
+| 7. **Include: Xác thực thông tin** | 2.6 Kiểm tra tính hợp lệ của thông tin và minh chứng.                  |
+| 8. **Extend: Đồng ý**              |                                                                         |
+| → **Include: Cập nhật trạng thái cư dân** | 2.7.1 Ghi nhận trạng thái mới cho cư dân.                             |
+| → **Include: Cập nhật trạng thái phòng** *(nếu cần)* | 2.7.2 Cập nhật trạng thái phòng (trống, đang ở, bảo trì…).         |
+| → **Include: Thông báo cho cư dân** | 2.7.3 Gửi thông báo phê duyệt đến cư dân.                             |
+| 9. **Extend: Từ chối**             |                                                                         |
+| → **Include: Thông báo cho cư dân** | 2.8 Gửi thông báo từ chối với lý do cụ thể.                           |
 
-| Actor                                                                                                                                                  | System                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
-| 1. Cư dân mở chức năng quản lý tài khoản.                                                                                                              | 1.1 Hiển thị thông tin tài khoản.                   |
-| 2. Cư dân xem thông tin tài khoản.                                                                                                                     | 2.1 Cung cấp thông tin tài khoản chi tiết.          |
-| 3. Cư dân cập nhật thông tin tài khoản (nếu có).                                                                                                       | 3.1 Ghi nhận thông tin cập nhật.                    |
-| 4. Cư dân yêu cầu thay đổi trạng thái cư trú.                                                                                                          | 4.1 Ghi nhận yêu cầu thay đổi trạng thái cư trú.    |
-| 5. Cư dân tải lên minh chứng.                                                                                                                          | 4.2 Cho phép tải lên minh chứng.                    |
-| 6. Hệ thống gửi yêu cầu đến Manager.                                                                                                                   | 4.3 Thông báo cho Manager về yêu cầu mới.           |
-| 7. Manager xem thông tin đơn thay đổi trạng thái cư trú.                                                                                               | 7.1 Hiển thị chi tiết đơn yêu cầu.                  |
-| 8. Manager xác thực thông tin cư dân và minh chứng.                                                                                                    | 8.1 Kiểm tra và xác nhận tính hợp lệ của thông tin. |
-| 9. Manager quyết định xử lý hoặc chuyển tiếp. <br>- Nếu tự xử lý, chuyển sang bước 10. <br>- Nếu không tự xử lý, chuyển tiếp cho nhà cung cấp dịch vụ. |                                                     |
-| 10. Manager cập nhật trạng thái cư trú.                                                                                                                | 10.1 Cập nhật thông tin trạng thái cư trú.          |
-| 11. Hệ thống thông báo kết quả cho cư dân.                                                                                                             | 11.1 Gửi thông báo hoặc liên hệ trực tiếp nếu cần.  |
+---
 
-**- Điều kiện ngoại lệ:**
+### **8. Điều kiện ngoại lệ:**
 
-* Nếu cư dân không đăng nhập hoặc không hợp lệ → Từ chối thực hiện.
-* Nếu minh chứng không hợp lệ hoặc thiếu → Từ chối hoặc yêu cầu bổ sung.
-* Nếu Manager không thể xử lý → Bắt buộc chuyển tiếp cho nhà cung cấp dịch vụ.
-* Nếu thông tin thay đổi cần làm rõ thêm → Có thể liên hệ trực tiếp cư dân.
-
+- Nếu cư dân không đăng nhập → chuyển đến trang đăng nhập.
+- Nếu thiếu minh chứng → từ chối và yêu cầu bổ sung.
+- Nếu quản lý không thể xác thực → chuyển tiếp hoặc tạm dừng xử lý.
+- Nếu thông tin bổ sung bị thiếu hoặc không rõ ràng → hệ thống yêu cầu bổ sung.
