@@ -116,8 +116,8 @@ Thông tin báo cáo về sự cố, hoặc phản hồi từ người dùng
 
 | Trường         | Kiểu dữ liệu     | Ý nghĩa                                                                 |
 |----------------|------------------|-------------------------------------------------------------------------|
-| reportId       | int              | Mã định danh duy nhất cho mỗi báo cáo (khóa chính, duy nhất).          |
-| userId         | int              | ID người dùng gửi báo cáo (có thể liên kết với bảng `User`).            |
+| reportId       | int              | Mã báo cáo |
+| userId         | int              | ID người dùng gửi báo cáo.            |
 | problemTitle   | nvarchar(50)     | Tiêu đề ngắn mô tả vấn đề được báo cáo (bắt buộc nhập).                |
 | description    | nvarchar(200)    | Mô tả chi tiết hơn về sự cố hoặc tình huống cần phản ánh.              |
 | timeOfEvent    | time             | Thời điểm gửi báo cáo / phản hồi                                       | 
