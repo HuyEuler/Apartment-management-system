@@ -111,3 +111,17 @@ Thông tin phương tiện của cư dân trong chung cư.
 
 Nếu bạn cần thêm biểu đồ ERD hoặc file xuất sang PDF, mình có thể hỗ trợ ngay!
 
+## 8. Bảng `Report` - Báo cáo sự cố, phản hồi 
+Thông tin báo cáo về sự cố, hoặc phản hồi từ người dùng 
+
+| Trường         | Kiểu dữ liệu     | Ý nghĩa                                                                 |
+|----------------|------------------|-------------------------------------------------------------------------|
+| reportId       | int              | Mã định danh duy nhất cho mỗi báo cáo (khóa chính, duy nhất).          |
+| userId         | int              | ID người dùng gửi báo cáo (có thể liên kết với bảng `User`).            |
+| problemTitle   | nvarchar(50)     | Tiêu đề ngắn mô tả vấn đề được báo cáo (bắt buộc nhập).                |
+| description    | nvarchar(200)    | Mô tả chi tiết hơn về sự cố hoặc tình huống cần phản ánh.              |
+| timeOfEvent    | time             | Thời điểm gửi báo cáo / phản hồi                                       | 
+| type           | int              | `type = 0` : Gặp sự cố về dịch vụ.   `type = 1` : Vấn đề khác.        |
+| attachment     | varbinary(max)   | File đính kèm (ảnh, tài liệu...), có thể để trống nếu không có file.   |
+
+
