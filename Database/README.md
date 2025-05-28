@@ -122,6 +122,6 @@ Thông tin báo cáo về sự cố, hoặc phản hồi từ người dùng
 | description    | nvarchar(200)    | Mô tả chi tiết hơn về sự cố hoặc tình huống cần phản ánh.              |
 | timeOfEvent    | time             | Thời điểm gửi báo cáo / phản hồi                                       | 
 | type           | int              | `type = 0` : Gặp sự cố về dịch vụ.   `type = 1` : Vấn đề khác.        |
-| attachment     | varbinary(max)   | File đính kèm (ảnh, tài liệu...), có thể để trống nếu không có file.   |
+| attachment     | blob  | File đính kèm (ảnh, tài liệu...), có thể để trống nếu không có file.   |
 
 
