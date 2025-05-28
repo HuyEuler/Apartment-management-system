@@ -26,6 +26,17 @@ Table Login{
 
 Ref : Login.userId > User.userId
 
+Table Report{
+  reportId int [primary key, unique]
+  userId int
+  problemTitle nvarchar(50) [not null]
+  description nvarchar(200)
+  type int [not null]
+  attachment blob 
+}
+
+Ref : Report.userId > User.userId
+
 Table Apartment{
   apartmentId int [primary key, increment]
   ownerId int [not null]
