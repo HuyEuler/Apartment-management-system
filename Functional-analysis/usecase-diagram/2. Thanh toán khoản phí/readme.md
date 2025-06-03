@@ -1,7 +1,8 @@
 # 2. Sơ đồ Usecase cho thanh toán khoản phí
 
 ## 2.1. Sơ đồ usecase
-![alt text](image-3.png)
+
+![alt text](image-4.png)
 
 ## 2.2. Đặc tả cho usecase
 ### Đặc tả Use Case UC001 - **Pay Fee**

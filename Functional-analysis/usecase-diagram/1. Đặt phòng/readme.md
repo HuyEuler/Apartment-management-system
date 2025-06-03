@@ -2,7 +2,7 @@
 
 ## 1.1 . Sơ đồ usecase
 
-![alt text](image-2.png)
+![alt text](image.png)
 
 ## 1.2. Đặc tả use case
 
