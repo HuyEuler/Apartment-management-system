@@ -4,43 +4,52 @@
 
 ![alt text](image-4.png)
 
-## 2.2. Đặc tả cho usecase
-### Đặc tả Use Case UC001 - **Pay Fee**
+## 2.2. Đặc tả cho Use Case: UC001 - Thanh toán khoản phí
 
-| Mã use case       | UC001                                 |
-|-------------------|----------------------------------------|
-| Tên use case      | Pay Fee                                |
-| Tác nhân          | Cư dân                                 |
-| Mục đích sử dụng  | Cư dân thanh toán phí chung cư         |
-| Sự kiện kích hoạt | Cư dân chọn chức năng thanh toán phí   |
-| Điều kiện tiên quyết | Không                               |
-| Luồng sự kiện chính (Thành công) |  1. Cư dân đăng nhập vào hệ thống quản lý chung cư.  <br> 2. Cư dân chọn chức năng "Thanh Toán Phí".  <br> 3. Hệ thống hiển thị thông tin thanh toán (bao gồm "Xem Thông Tin Thanh Toán").  <br>4. Cư dân chọn khoản phí cần thanh toán.  <br> 5. Cư dân chọn phương thức thanh toán (thẻ ngân hàng, ví điện tử,...).  <br> 6. Cư dân nhập thông tin thanh toán và xác nhận giao dịch.  <br> 7. Hệ thống xử lý thanh toán và cập nhật trạng thái phí.  <br>8. Hệ thống hiển thị xác nhận thanh toán cho cư dân.  
-| Hậu điều kiện     | Giao dịch được ghi nhận, cư dân có thể kiểm tra lại trạng thái thanh toán. |
+## 1. Mã use case
+**UC001**
 
----
+## 2. Tên use case
+**Thanh toán khoản phí**
 
-### Đặc tả Use Case UC002 - **Generate Payment for Units**
+## 3. Tác nhân
+- **Khách hàng (Customer)**
+- **Quản lý (Manager)**
+- **Nhà cung cấp dịch vụ (Service Provider)**
 
-| Mã use case       | UC002                                              |
-|-------------------|-----------------------------------------------------|
-| Tên use case      | Generate Payment for Units                          |
-| Tác nhân          | Ban quản lý                                         |
-| Mục đích sử dụng  | Tạo danh sách khoản phí theo từng căn hộ/cư dân     |
-| Sự kiện kích hoạt | Ban quản lý chọn chức năng tạo thanh toán           |
-| Điều kiện tiên quyết | Đã lấy dữ liệu thanh toán từ nhà cung cấp       |
-| Luồng sự kiện chính (Thành công) | 1. Ban quản lý đăng nhập vào hệ thống.  <br>2. Ban quản lý chọn chức năng "Tạo Thanh Toán". <br>3. Hệ thống truy xuất dữ liệu thanh toán đã lưu từ nhà cung cấp.  <br>4. Hệ thống xử lý và ánh xạ dữ liệu tương ứng với từng hộ/cư dân.  <br>5. Hệ thống tạo các khoản phí phải đóng cho từng căn hộ.  <br>6. Dữ liệu được lưu vào cơ sở dữ liệu.  <br>7. Hệ thống thông báo hoàn tất việc tạo thanh toán.  
-| Hậu điều kiện     | Danh sách khoản phí đã được khởi tạo, sẵn sàng hiển thị cho cư dân. |
+## 4. Mục đích sử dụng
+Cho phép khách hàng thực hiện thanh toán phí dịch vụ, hệ thống xác minh thông tin thanh toán và cập nhật trạng thái thanh toán.
 
----
+## 5. Sự kiện kích hoạt
+Khách hàng chọn chức năng **"Pay Fee"** trong hệ thống sau khi đăng nhập.
 
-### Đặc tả Use Case UC003 - **Handle Complaint**
+## 6. Điều kiện tiên quyết
+- Khách hàng đã đăng nhập vào hệ thống.
+- Khoản phí phải trả đã được tạo và có thông tin xác minh.
 
-| Mã use case       | UC003                                               |
-|-------------------|------------------------------------------------------|
-| Tên use case      | Handle Complaint                                     |
-| Tác nhân          | Ban quản lý                                          |
-| Mục đích sử dụng  | Xử lý khiếu nại từ cư dân liên quan đến thanh toán  |
-| Sự kiện kích hoạt | Quản lý chọn chức năng xử lý khiếu nại trên hệ thống|
-| Điều kiện tiên quyết | Không                                            |
-| Luồng sự kiện chính (Thành công) |  1. Quản lý đăng nhập vào hệ thống.  <br>2. Chọn chức năng "Xử Lý Khiếu Nại".  <br>3. Hệ thống hiển thị danh sách khiếu nại chưa xử lý.  <br>4. Quản lý chọn một khiếu nại để xử lý.  <br>5. Hệ thống hiển thị chi tiết khiếu nại (tên cư dân, nội dung, hóa đơn liên quan). <br>6. Quản lý xác minh thông tin liên quan (hóa đơn, lịch sử thanh toán). <br>7. Thực hiện hành động xử lý (cập nhật dữ liệu, phản hồi, giải thích...)<br>8. Cập nhật trạng thái khiếu nại (Đã Giải Quyết, Đang Xử Lý, Chuyển Tiếp).  <br>9. Hệ thống thông báo cho cư dân về kết quả xử lý.  
-| Hậu điều kiện     | Khiếu nại được cập nhật trạng thái, lưu vào hệ thống, cư dân nhận được thông báo phản hồi. |
+## 7. Luồng sự kiện chính (Thành công)
+1. Khách hàng đăng nhập vào hệ thống.
+2. Khách hàng chọn chức năng **“Pay Fee”**.
+3. Hệ thống yêu cầu khách hàng **chọn phương thức thanh toán**.
+4. Khách hàng chọn phương thức phù hợp (thẻ, ví điện tử...).
+5. Khách hàng **xác nhận thanh toán**.
+6. Hệ thống thực hiện **xác minh thông tin thanh toán** (`Verify Payment Info`).
+7. Hệ thống gọi tới **nhà cung cấp dịch vụ** để **lấy dữ liệu thanh toán** (`Retrieve Payment Data From Service Provider`).
+8. Nhà cung cấp dịch vụ phản hồi kết quả giao dịch.
+9. Hệ thống **tạo hóa đơn** (`Generate Invoice`).
+10. Hệ thống **cập nhật trạng thái thanh toán** (`Update Payment Status`).
+11. Quản lý có thể truy cập để kiểm tra trạng thái thanh toán.
+
+## 8. Luồng sự kiện thay thế
+
+### 8.1 Thông tin thanh toán chưa hợp lệ
+- Hệ thống yêu cầu khách hàng cung cấp thêm thông tin (`Send Additional Information`).
+- Sau khi bổ sung, quay lại bước xác minh (bước 6).
+
+### 8.2 Khách hàng không xác nhận thanh toán
+- Sau thời hạn thanh toán, hệ thống tự động **gửi nhắc nhở** (`Send Payment Reminder`).
+- Nếu vẫn không thực hiện, trạng thái giao dịch giữ nguyên là **“Chưa thanh toán”**.
+
+## 9. Hậu điều kiện
+- **Thành công:** Trạng thái được cập nhật là **“Đã thanh toán”**, hóa đơn được tạo, thông tin được lưu trữ.
+- **Thất bại:** Giao dịch bị hủy hoặc giữ ở trạng thái chờ xử lý, cần xác minh lại sau.
